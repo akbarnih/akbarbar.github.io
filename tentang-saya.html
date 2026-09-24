@@ -6,33 +6,431 @@
 
     <title>Tentang Saya — Akbar Nubijak</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #111111;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #555;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu .active {
+            color: #000;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 80vh;
+            padding: 90px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+            max-width: 1100px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        /* FOTO */
+        .photo-box {
+            position: relative;
+        }
+
+        .photo-box img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 24px;
+            display: block;
+        }
+
+        .photo-box::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #111;
+            border-radius: 24px;
+            left: 14px;
+            top: 14px;
+            z-index: -1;
+        }
+
+        /* TEXT */
+        .small-title {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 76px);
+            line-height: 0.95;
+            letter-spacing: -4px;
+            margin-bottom: 25px;
+        }
+
+        h1 span {
+            color: #777;
+        }
+
+        .description {
+            max-width: 650px;
+            font-size: 17px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            max-width: 650px;
+        }
+
+        .info-box {
+            padding: 18px;
+            background: #f7f7f7;
+            border-radius: 14px;
+        }
+
+        .info-box small {
+            display: block;
+            color: #888;
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+
+        .info-box strong {
+            font-size: 15px;
+        }
+
+        /* SKILLS */
+        .skills-section {
+            padding: 80px 8%;
+            background: #111;
+            color: white;
+        }
+
+        .skills-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .skills-title {
+            font-size: 40px;
+            letter-spacing: -2px;
+            margin-bottom: 40px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            border: 1px solid #444;
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            color: #ddd;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            background: white;
+            color: black;
+        }
+
+        /* ORGANIZATION */
+        .experience {
+            padding: 90px 8%;
+        }
+
+        .experience-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .experience-title {
+            font-size: 40px;
+            letter-spacing: -2px;
+            margin-bottom: 35px;
+        }
+
+        .experience-card {
+            border-top: 1px solid #ddd;
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .experience-card h3 {
+            font-size: 22px;
+            margin-bottom: 6px;
+        }
+
+        .experience-card p {
+            color: #666;
+            max-width: 650px;
+        }
+
+        .year {
+            color: #888;
+            white-space: nowrap;
+            font-size: 14px;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 30px 8%;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 18px 6%;
+            }
+
+            .nav-menu {
+                gap: 14px;
+            }
+
+            .nav-menu a {
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 70px 7%;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .photo-box {
+                max-width: 260px;
+                margin: auto;
+            }
+
+            h1 {
+                letter-spacing: -2px;
+            }
+
+            .description {
+                font-size: 15px;
+            }
+
+            .info {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-section,
+            .experience {
+                padding: 70px 7%;
+            }
+
+            .experience-card {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
+    <!-- NAVBAR -->
     <nav>
-        <a href="index.html">Beranda</a>
-        <a href="tentang.html">Tentang Saya</a>
+        <div class="logo">AKBAR.</div>
+
+        <div class="nav-menu">
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html" class="active">Tentang Saya</a>
+        </div>
     </nav>
 
-    <main>
-        <h1>Tentang Saya</h1>
 
-        <img src="img/akbar.jpg" alt="Foto Akbar">
+    <!-- TENTANG SAYA -->
+    <section class="hero">
 
-        <h2>Akbar Nubijak</h2>
+        <div class="hero-content">
 
-        <p>
-            Halo! Saya Akbar Nubijak, seorang siswa SMK PGRI 1 Tangerang
-            jurusan Desain Komunikasi Visual.
-        </p>
+            <!-- FOTO -->
+            <div class="photo-box">
+                <img src="img/akbar.jpg" alt="Foto Akbar Nubijak">
+            </div>
 
-        <p>
-            Saya memiliki ketertarikan pada desain grafis, fotografi,
-            videografi, dan dunia kreatif visual.
-        </p>
-    </main>
+            <!-- TEXT -->
+            <div>
+                <div class="small-title">About Me</div>
+
+                <h1>
+                    Akbar<br>
+                    <span>Nubijak.</span>
+                </h1>
+
+                <p class="description">
+                    Halo! Saya Akbar Nubijak, seorang siswa SMK PGRI 1
+                    Tangerang jurusan Desain Komunikasi Visual. Saya memiliki
+                    ketertarikan pada dunia kreatif dan visual, khususnya
+                    desain grafis, fotografi, dan videografi.
+                </p>
+
+                <div class="info">
+
+                    <div class="info-box">
+                        <small>SEKOLAH</small>
+                        <strong>SMK PGRI 1 Tangerang</strong>
+                    </div>
+
+                    <div class="info-box">
+                        <small>JURUSAN</small>
+                        <strong>Desain Komunikasi Visual</strong>
+                    </div>
+
+                    <div class="info-box">
+                        <small>FOKUS</small>
+                        <strong>Graphic Design</strong>
+                    </div>
+
+                    <div class="info-box">
+                        <small>MINAT</small>
+                        <strong>Visual & Creative</strong>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="skills-section">
+
+        <div class="skills-container">
+
+            <div class="small-title">What I Do</div>
+
+            <h2 class="skills-title">
+                Skills & Interests
+            </h2>
+
+            <div class="skills">
+
+                <div class="skill">Graphic Design</div>
+                <div class="skill">Photography</div>
+                <div class="skill">Videography</div>
+                <div class="skill">Video Editing</div>
+                <div class="skill">Content Creation</div>
+                <div class="skill">Social Media Design</div>
+                <div class="skill">Visual Branding</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section class="experience">
+
+        <div class="experience-container">
+
+            <div class="small-title">Experience</div>
+
+            <h2 class="experience-title">
+                DKV Production
+            </h2>
+
+            <div class="experience-card">
+
+                <div>
+                    <h3>Divisi Desain Grafis</h3>
+
+                    <p>
+                        Terlibat dalam DKV Production sebagai bagian dari
+                        divisi desain grafis. Berfokus pada pembuatan berbagai
+                        kebutuhan visual seperti poster, konten media sosial,
+                        desain merchandise, branding, dan kebutuhan desain
+                        lainnya.
+                    </p>
+                </div>
+
+                <div class="year">
+                    2025 — Sekarang
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Akbar Nubijak — DKV Portfolio
+    </footer>
 
 </body>
 </html>
