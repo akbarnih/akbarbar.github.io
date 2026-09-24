@@ -1,75 +1,136 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-    <title>Beranda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Akbar Nubijak — Beranda</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
 
-<body bgcolor="darkgrey">
-    <!-- Halaman web tanpa CSS. Murni hanya memakai HTML -->
-    <p>&nbsp;</p>
-    <table border="1" width="800px" cellpadding="12px" align="center" bgcolor="white">
-        <tr>
-            <td colspan="2" align="center" bgcolor="teal" background="images/jaring-teal.svg">
-                <font color="white">
-                    <p>&nbsp;</p>
-                    <h1>Website Akbar</h1>
-                    <p><em>Think Creative, Make Impact.</em></p>
-                    <p>&nbsp;</p>
-                </font>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" bgcolor="pink">
-                <a href="./">Beranda</a> |
-                <a href="tentang-saya.html">Tentang Saya</a> |
-                <a href="sekolahku.html">Sekolahku</a> |
-                <a href="syair-lagu.html">Syair Lagu</a>
-            </td>
-        </tr>
-        <tr>
-            <td width="75%">
-                <!-- Content utama -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-                <h3>JUARA 2 LOMBA SHORT MOVIE TINGKAT PROVINSI BANTEN</h3>
-                <p align="right"><small><em>Selasa, 9 Juni 2026</em></small></p>
-                <p>Meraih Juara 2 dalam Lomba Short Movie tingkat Provinsi Banten melalui karya
-                    film pendek yang mengangkat cerita tentang pentingnya menemukan dan mengembangkan passion.
-                    Dalam proses pembuatannya, saya terlibat dalam pengembangan konsep, penyusunan cerita, produksi visual, 
-                    pengambilan gambar, hingga proses editing. Pengalaman ini menjadi kesempatan untuk menerapkan kemampuan 
-                    dalam bidang videografi, storytelling, sinematografi, dan editing sekaligus bekerja sama dalam sebuah tim 
-                    untuk menghasilkan karya yang komunikatif dan menarik secara visual.</p>
-                <p><a href="berita/berita-1.html">Selanjutnya</a></p>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eeeeee;
+            color: #222;
+        }
 
-                <hr>
+        .container {
+            width: 850px;
+            max-width: 92%;
+            margin: 40px auto;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+        }
 
-                <h3>Lomba Pembuatan Video</h3>
-                <p align="right"><small><em>Jumat, 4 September 2026</em></small></p>
-                <p>Telah dibuka pendaftaran lomba pembuatan video pendek
-                tentang pariwisata di Tangerang. Lomba ini bekerja sama dengan
-                MGMP DKV Kota Tangerang, yang bertujuan untuk memperkenalkan
-                pariwisata yang ada di kota Tangerang.</p>
-                <p><a href="berita/berita-2.html">Selanjutnya</a></p>
+        /* HEADER */
+        header {
+            background: #167c80;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
 
-                <!-- Akhir dari content utama -->
-            </td>
-            <td width="25%" valign="top" bgcolor="lightgrey">
-                <p>Tautan eksternal</p>
-                <ol>
-                    <li><a href="https://akbarnih.github.io/">Portofoli akbar</a></li>
-                    <li><a href="https://www.github.com">Github</a></li>
-                    <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
-                    <li><a href="https://www.w3schools.com">W3Schools</a></li>
-                </ol>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" align="right" bgcolor="black">
-                <font color="white"><small>&copy; Copyright Mawan A. Nugroho, 2026.</small></font>
-            </td>
-        </tr>
-    </table>
-    <p>&nbsp;</p>
-</body>
+        header h1 {
+            margin: 0;
+            font-size: 38px;
+        }
 
-</html>
+        header p {
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        /* NAVBAR */
+        nav {
+            padding: 16px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0 12px;
+        }
+
+        nav a:hover {
+            color: #167c80;
+        }
+
+        /* CONTENT */
+        .content {
+            display: flex;
+        }
+
+        .main {
+            width: 70%;
+            padding: 30px;
+        }
+
+        .sidebar {
+            width: 30%;
+            padding: 25px;
+            background: #f5f5f5;
+        }
+
+        /* ARTIKEL */
+        .article {
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .article:last-child {
+            border-bottom: none;
+        }
+
+        .article h2 {
+            margin: 0 0 5px;
+            color: #167c80;
+        }
+
+        .date {
+            color: #888;
+            font-size: 12px;
+            text-align: right;
+            margin-bottom: 15px;
+        }
+
+        .article p {
+            line-height: 1.7;
+        }
+
+        .read-more {
+            color: #167c80;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* SIDEBAR */
+        .sidebar h3 {
+            color: #167c80;
+            margin-top: 0;
+        }
+
+        .sidebar a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 12px;
+        }
+
+        .
