@@ -5,132 +5,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Akbar Nubijak — Beranda</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Akbar Nubijak</title>
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
             margin: 0;
+            background-color: #e5e5e5;
             font-family: Arial, sans-serif;
-            background: #eeeeee;
-            color: #222;
         }
 
-        .container {
-            width: 850px;
-            max-width: 92%;
-            margin: 40px auto;
-            background: white;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+        .website {
+            width: 800px;
+            max-width: 90%;
+            margin: 30px auto;
+            background-color: white;
         }
 
         /* HEADER */
-        header {
-            background: #167c80;
+        .header {
+            background-color: teal;
             color: white;
             text-align: center;
-            padding: 50px 20px;
+            padding: 35px 10px;
         }
 
-        header h1 {
+        .header h1 {
             margin: 0;
-            font-size: 38px;
         }
 
-        header p {
-            margin-top: 10px;
-            opacity: 0.9;
-        }
-
-        /* NAVBAR */
-        nav {
-            padding: 16px;
+        /* MENU */
+        .menu {
+            padding: 15px;
             text-align: center;
             border-bottom: 1px solid #ddd;
         }
 
-        nav a {
+        .menu a {
+            color: black;
             text-decoration: none;
-            color: #333;
-            font-size: 14px;
-            font-weight: bold;
-            margin: 0 12px;
+            margin: 0 10px;
         }
 
-        nav a:hover {
-            color: #167c80;
+        .menu a:hover {
+            color: teal;
         }
 
-        /* CONTENT */
-        .content {
-            display: flex;
-        }
-
-        .main {
-            width: 70%;
-            padding: 30px;
-        }
-
-        .sidebar {
-            width: 30%;
+        /* ISI */
+        .isi {
             padding: 25px;
-            background: #f5f5f5;
         }
 
-        /* ARTIKEL */
-        .article {
-            margin-bottom: 35px;
-            padding-bottom: 25px;
+        .berita {
+            margin-bottom: 30px;
             border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
         }
 
-        .article:last-child {
-            border-bottom: none;
+        .berita h2 {
+            color: teal;
         }
 
-        .article h2 {
-            margin: 0 0 5px;
-            color: #167c80;
+        .tanggal {
+            color: gray;
+            font-size: 13px;
         }
 
-        .date {
-            color: #888;
-            font-size: 12px;
-            text-align: right;
-            margin-bottom: 15px;
+        .berita p {
+            line-height: 1.6;
         }
 
-        .article p {
-            line-height: 1.7;
+        /* FOOTER */
+        .footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 13px;
         }
 
-        .read-more {
-            color: #167c80;
-            text-decoration: none;
-            font-weight: bold;
-        }
+        /* HP */
+        @media screen and (max-width: 600px) {
 
-        .read-more:hover {
-            text-decoration: underline;
-        }
+            .website {
+                width: 95%;
+            }
 
-        /* SIDEBAR */
-        .sidebar h3 {
-            color: #167c80;
-            margin-top: 0;
+            .menu a {
+                display: block;
+                margin: 10px;
+            }
         }
+    </style>
+</head>
 
-        .sidebar a {
-            color: #333;
-            text-decoration: none;
-        }
+<body>
 
-        .sidebar li {
-            margin-bottom: 12px;
-        }
+    <div class="website">
 
-        .
+        <!-- HEADER -->
+        <div class="header">
+            <h1>Akbar Nubijak</h1>
+            <p>Desain Komunikasi Visual</p>
+        </div>
+
+
+        <!-- MENU -->
+        <div class="menu">
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang Saya</a>
+            <a href="sekolahku.html">Sekolahku</a>
+            <a href="syair-lagu.html">Syair Lagu</a>
+        </div>
+
+
+        <!-- ISI -->
+        <div class="isi">
+
+            <div class="berita">
+
+                <h2>Selamat Datang</h2>
+
+                <p class="tanggal">
+                    24 September 2026
+                </p>
+
+                <p>
+                    Halo! Saya Akbar Nubijak, siswa SMK PGRI 1 Tangerang
+                    jurusan Desain Komunikasi Visual.
+                </p>
+
+                <p>
+                    Saya memiliki ketertarikan pada dunia kreatif,
+                    terutama desain grafis, fotografi, dan videografi.
+                </p>
+
+                <a href="tentang.html">
+                    Baca selengkapnya →
+                </a>
+
+            </div>
+
+
+            <div class="berita">
+
+                <h2>DKV Production</h2>
+
+                <p class="tanggal">
+                    Desain Komunikasi Visual
+                </p>
+
+                <p>
+                    Saya terlibat dalam DKV Production pada divisi
+                    desain grafis. Di dalamnya saya belajar dan
+                    mengembangkan berbagai kemampuan di bidang desain
+                    dan visual.
+                </p>
+
+                <a href="tentang.html">
+                    Selengkapnya →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER -->
+        <div class="footer">
+            &copy; 2026 Akbar Nubijak
+        </div>
+
+    </div>
+
+</body>
+
+</html>
