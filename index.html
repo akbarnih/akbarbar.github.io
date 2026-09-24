@@ -1,73 +1,136 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <title>Beranda</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beranda - Akbar Nubijak</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
+        }
+
+        .container {
+            width: 800px;
+            max-width: 90%;
+            margin: 40px auto;
+            background-color: white;
+        }
+
+        /* Header */
+        header {
+            background-color: teal;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 35px;
+        }
+
+        header p {
+            margin-bottom: 0;
+        }
+
+        /* Menu */
+        nav {
+            text-align: center;
+            padding: 18px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+
+        nav a:hover {
+            color: teal;
+        }
+
+        /* Isi */
+        main {
+            padding: 30px;
+        }
+
+        main h2 {
+            color: teal;
+        }
+
+        main p {
+            line-height: 1.7;
+        }
+
+        .selengkapnya {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: teal;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .selengkapnya:hover {
+            background-color: #006666;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 13px;
+        }
+    </style>
 </head>
 
-<body bgcolor="darkgrey">
-    <!-- Halaman web tanpa CSS. Murni hanya memakai HTML -->
-    <p>&nbsp;</p>
-    <table border="1" width="800px" cellpadding="12px" align="center" bgcolor="white">
-        <tr>
-            <td colspan="2" align="center" bgcolor="teal" background="images/jaring-teal.svg">
-                <font color="white">
-                    <p>&nbsp;</p>
-                    <h1>Website Mawan</h1>
-                    <p><em>Di mana ada ke Mawan, di situ ada jalan.</em></p>
-                    <p>&nbsp;</p>
-                </font>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" bgcolor="pink">
-                <a href="./">Beranda</a> |
-                <a href="tentang-saya.html">Tentang Saya</a> |
-                <a href="sekolahku.html">Sekolahku</a> |
-                <a href="syair-lagu.html">Syair Lagu</a>
-            </td>
-        </tr>
-        <tr>
-            <td width="75%">
-                <!-- Content utama -->
+<body>
 
-                <h3>Pembelajaran Jarak Jauh</h3>
-                <p align="right"><small><em>Senin, 7 September 2026</em></small></p>
-                <p>Karena adanya abu erupsi anak gunung Krakatau, maka selama
-                3 hari ke depan, pembelajaran dilakukan secara jarak jauh.
-                Pembelajaran dapat memakai zoom, LMS, WhatsApp, Telegram,
-                atau media lain yang ditentukan oleh guru.</p>
-                <p><a href="berita/berita-1.html">Selanjutnya</a></p>
+    <div class="container">
 
-                <hr>
+        <header>
+            <h1>Akbar Nubijak</h1>
+            <p>Desain Komunikasi Visual</p>
+        </header>
 
-                <h3>Lomba Pembuatan Video</h3>
-                <p align="right"><small><em>Jumat, 4 September 2026</em></small></p>
-                <p>Telah dibuka pendaftaran lomba pembuatan video pendek
-                tentang pariwisata di Tangerang. Lomba ini bekerja sama dengan
-                MGMP DKV Kota Tangerang, yang bertujuan untuk memperkenalkan
-                pariwisata yang ada di kota Tangerang.</p>
-                <p><a href="berita/berita-2.html">Selanjutnya</a></p>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang Saya</a>
+        </nav>
 
-                <!-- Akhir dari content utama -->
-            </td>
-            <td width="25%" valign="top" bgcolor="lightgrey">
-                <p>Tautan eksternal</p>
-                <ol>
-                    <li><a href="https://www.mawan.or.id">Website Mawan</a></li>
-                    <li><a href="https://www.github.com">Github</a></li>
-                    <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
-                    <li><a href="https://www.w3schools.com">W3Schools</a></li>
-                </ol>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" align="right" bgcolor="black">
-                <font color="white"><small>&copy; Copyright Mawan A. Nugroho, 2026.</small></font>
-            </td>
-        </tr>
-    </table>
-    <p>&nbsp;</p>
+        <main>
+
+            <h2>Selamat Datang!</h2>
+
+            <p>
+                Halo! Saya Akbar Nubijak, siswa SMK PGRI 1 Tangerang
+                jurusan Desain Komunikasi Visual.
+            </p>
+
+            <p>
+                Saya memiliki ketertarikan pada desain grafis,
+                fotografi, videografi, dan dunia kreatif.
+            </p>
+
+            <a class="selengkapnya" href="tentang.html">
+                Tentang Saya →
+            </a>
+
+        </main>
+
+        <footer>
+            &copy; 2026 Akbar Nubijak
+        </footer>
+
+    </div>
+
 </body>
-
 </html>
