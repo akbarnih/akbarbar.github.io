@@ -21,7 +21,7 @@
             background-color: white;
         }
 
-        /* Header */
+        /* HEADER */
         header {
             background-color: teal;
             color: white;
@@ -38,7 +38,7 @@
             margin-bottom: 0;
         }
 
-        /* Menu */
+        /* MENU */
         nav {
             text-align: center;
             padding: 18px;
@@ -55,7 +55,7 @@
             color: teal;
         }
 
-        /* Isi */
+        /* ISI */
         main {
             padding: 30px;
         }
@@ -69,28 +69,46 @@
             line-height: 1.7;
         }
 
+        /* INFORMASI SEKOLAH */
         .info {
             background-color: #f2f2f2;
             padding: 20px;
-            margin-top: 20px;
+            margin: 25px 0;
             border-left: 5px solid teal;
         }
 
         .info p {
-            margin: 8px 0;
+            margin: 10px 0;
         }
 
         .info strong {
             color: teal;
         }
 
-        /* Footer */
+        /* FOOTER */
         footer {
             background-color: #222;
             color: white;
             text-align: center;
             padding: 15px;
             font-size: 13px;
+        }
+
+        /* HP */
+        @media screen and (max-width: 600px) {
+
+            .container {
+                width: 95%;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
         }
     </style>
 </head>
@@ -99,72 +117,92 @@
 
     <div class="container">
 
-        <!-- Header -->
+        <!-- HEADER -->
         <header>
             <h1>Akbar Nubijak</h1>
             <p>Desain Komunikasi Visual</p>
         </header>
 
-        <!-- Menu -->
+
+        <!-- MENU -->
         <nav>
             <a href="index.html">Beranda</a>
             <a href="tentang.html">Tentang Saya</a>
             <a href="sekolahku.html">Sekolahku</a>
         </nav>
 
-        <!-- Isi -->
+
+        <!-- ISI -->
         <main>
 
             <h2>Sekolahku</h2>
 
             <p>
-                Saya bersekolah di SMK PGRI 1 Tangerang,
-                salah satu sekolah menengah kejuruan yang berada
-                di Kota Tangerang.
+                Saya bersekolah di SMK PGRI 1 Tangerang.
+                Saya mengambil jurusan Desain Komunikasi Visual
+                karena memiliki ketertarikan pada dunia desain
+                dan industri kreatif.
             </p>
 
+
+            <!-- INFORMASI SEKOLAH -->
             <div class="info">
 
                 <p>
-                    <strong>Nama Sekolah:</strong>
+                    <strong>Nama Sekolah:</strong><br>
                     SMK PGRI 1 Tangerang
                 </p>
 
                 <p>
-                    <strong>Jurusan:</strong>
+                    <strong>Alamat Sekolah:</strong><br>
+                    Jl. Perintis Kemerdekaan II No. 33,
+                    Babakan, Kota Tangerang, Banten
+                </p>
+
+                <p>
+                    <strong>Jurusan:</strong><br>
                     Desain Komunikasi Visual
                 </p>
 
                 <p>
-                    <strong>Bidang:</strong>
+                    <strong>Bidang:</strong><br>
                     Desain dan Industri Kreatif
-                </p>
-
-                <p>
-                    <strong>Fokus Belajar:</strong>
-                    Desain Grafis, Fotografi, dan Videografi
                 </p>
 
             </div>
 
-            <h2>Kegiatan</h2>
+
+            <!-- KEGIATAN -->
+            <h2>Kegiatan di Sekolah</h2>
 
             <p>
                 Selama bersekolah, saya mengikuti berbagai kegiatan
                 yang berkaitan dengan dunia kreatif dan visual.
-                Salah satunya adalah DKV Production, khususnya
-                pada divisi desain grafis.
             </p>
 
             <p>
-                Melalui kegiatan tersebut, saya dapat mengembangkan
-                kemampuan desain sekaligus belajar bekerja sama
-                dalam sebuah tim.
+                Salah satunya adalah DKV Production, khususnya
+                pada divisi desain grafis. Kegiatan ini menjadi
+                salah satu tempat untuk mengembangkan kemampuan
+                desain, bekerja sama dalam tim, dan membuat
+                berbagai kebutuhan visual.
+            </p>
+
+
+            <!-- PEMBELAJARAN -->
+            <h2>Pembelajaran</h2>
+
+            <p>
+                Dalam jurusan Desain Komunikasi Visual, saya
+                mempelajari berbagai hal seperti desain grafis,
+                fotografi, videografi, editing, serta pembuatan
+                konten visual.
             </p>
 
         </main>
 
-        <!-- Footer -->
+
+        <!-- FOOTER -->
         <footer>
             &copy; 2026 Akbar Nubijak
         </footer>
