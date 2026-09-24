@@ -14,281 +14,114 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #ffffff;
-            color: #111111;
-            line-height: 1.6;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #111;
         }
 
         /* NAVBAR */
         nav {
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            padding: 20px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 8%;
-            background: rgba(255, 255, 255, 0.92);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid #eeeeee;
+            border-bottom: 1px solid #eee;
         }
 
         .logo {
+            font-weight: bold;
             font-size: 20px;
-            font-weight: 800;
-            letter-spacing: -1px;
         }
 
-        .nav-menu {
-            display: flex;
-            gap: 30px;
-        }
-
-        .nav-menu a {
+        nav a {
             text-decoration: none;
             color: #555;
+            margin-left: 20px;
             font-size: 14px;
-            font-weight: 600;
-            transition: 0.3s;
         }
 
-        .nav-menu a:hover,
-        .nav-menu .active {
-            color: #000;
-        }
-
-        /* HERO */
-        .hero {
-            min-height: 80vh;
-            padding: 90px 8%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .hero-content {
-            max-width: 1100px;
-            width: 100%;
-            display: grid;
-            grid-template-columns: 320px 1fr;
-            gap: 80px;
-            align-items: center;
-        }
-
-        /* FOTO */
-        .photo-box {
-            position: relative;
-        }
-
-        .photo-box img {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            object-fit: cover;
-            border-radius: 24px;
-            display: block;
-        }
-
-        .photo-box::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border: 2px solid #111;
-            border-radius: 24px;
-            left: 14px;
-            top: 14px;
-            z-index: -1;
-        }
-
-        /* TEXT */
-        .small-title {
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: #777;
-            margin-bottom: 15px;
-        }
-
-        h1 {
-            font-size: clamp(42px, 7vw, 76px);
-            line-height: 0.95;
-            letter-spacing: -4px;
-            margin-bottom: 25px;
-        }
-
-        h1 span {
-            color: #777;
-        }
-
-        .description {
-            max-width: 650px;
-            font-size: 17px;
-            color: #555;
-            margin-bottom: 30px;
-        }
-
-        .info {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            max-width: 650px;
-        }
-
-        .info-box {
-            padding: 18px;
-            background: #f7f7f7;
-            border-radius: 14px;
-        }
-
-        .info-box small {
-            display: block;
-            color: #888;
-            font-size: 12px;
-            margin-bottom: 4px;
-        }
-
-        .info-box strong {
-            font-size: 15px;
-        }
-
-        /* SKILLS */
-        .skills-section {
-            padding: 80px 8%;
-            background: #111;
-            color: white;
-        }
-
-        .skills-container {
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .skills-title {
-            font-size: 40px;
-            letter-spacing: -2px;
-            margin-bottom: 40px;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .skill {
-            border: 1px solid #444;
-            padding: 12px 20px;
-            border-radius: 50px;
-            font-size: 14px;
-            color: #ddd;
-            transition: 0.3s;
-        }
-
-        .skill:hover {
-            background: white;
+        nav a:hover {
             color: black;
         }
 
-        /* ORGANIZATION */
-        .experience {
-            padding: 90px 8%;
+        /* CONTENT */
+        .container {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 0 25px;
         }
 
-        .experience-container {
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .experience-title {
-            font-size: 40px;
-            letter-spacing: -2px;
-            margin-bottom: 35px;
-        }
-
-        .experience-card {
-            border-top: 1px solid #ddd;
-            padding: 30px 0;
+        .about {
             display: flex;
-            justify-content: space-between;
-            gap: 30px;
+            align-items: center;
+            gap: 50px;
         }
 
-        .experience-card h3 {
-            font-size: 22px;
-            margin-bottom: 6px;
+        .about img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 20px;
         }
 
-        .experience-card p {
-            color: #666;
-            max-width: 650px;
+        .text h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
         }
 
-        .year {
+        .text h1 span {
+            color: #777;
+        }
+
+        .text p {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        /* INFO */
+        .info {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .box {
+            padding: 20px;
+            background: #f6f6f6;
+            border-radius: 12px;
+        }
+
+        .box small {
             color: #888;
-            white-space: nowrap;
-            font-size: 14px;
         }
 
-        /* FOOTER */
-        footer {
-            padding: 30px 8%;
-            border-top: 1px solid #eee;
-            text-align: center;
-            color: #888;
-            font-size: 13px;
+        .box p {
+            margin-top: 5px;
+            color: #111;
+            font-weight: bold;
         }
 
         /* MOBILE */
-        @media (max-width: 700px) {
+        @media (max-width: 650px) {
 
-            nav {
-                padding: 18px 6%;
+            .about {
+                flex-direction: column;
+                text-align: center;
             }
 
-            .nav-menu {
-                gap: 14px;
+            .about img {
+                width: 180px;
+                height: 180px;
             }
 
-            .nav-menu a {
-                font-size: 12px;
-            }
-
-            .hero {
-                padding: 70px 7%;
-            }
-
-            .hero-content {
-                grid-template-columns: 1fr;
-                gap: 50px;
-            }
-
-            .photo-box {
-                max-width: 260px;
-                margin: auto;
-            }
-
-            h1 {
-                letter-spacing: -2px;
-            }
-
-            .description {
-                font-size: 15px;
+            .text h1 {
+                font-size: 36px;
             }
 
             .info {
                 grid-template-columns: 1fr;
-            }
-
-            .skills-section,
-            .experience {
-                padding: 70px 7%;
-            }
-
-            .experience-card {
-                flex-direction: column;
-                gap: 10px;
             }
         }
     </style>
@@ -300,137 +133,65 @@
     <nav>
         <div class="logo">AKBAR.</div>
 
-        <div class="nav-menu">
+        <div>
             <a href="index.html">Beranda</a>
-            <a href="tentang.html" class="active">Tentang Saya</a>
+            <a href="tentang.html">Tentang Saya</a>
         </div>
     </nav>
 
 
     <!-- TENTANG SAYA -->
-    <section class="hero">
+    <div class="container">
 
-        <div class="hero-content">
+        <div class="about">
 
-            <!-- FOTO -->
-            <div class="photo-box">
-                <img src="img/akbar.jpg" alt="Foto Akbar Nubijak">
-            </div>
+            <img src="img/akbar.jpg" alt="Foto Akbar">
 
-            <!-- TEXT -->
-            <div>
-                <div class="small-title">About Me</div>
+            <div class="text">
 
-                <h1>
-                    Akbar<br>
-                    <span>Nubijak.</span>
-                </h1>
+                <h1>Akbar <span>Nubijak.</span></h1>
 
-                <p class="description">
-                    Halo! Saya Akbar Nubijak, seorang siswa SMK PGRI 1
-                    Tangerang jurusan Desain Komunikasi Visual. Saya memiliki
-                    ketertarikan pada dunia kreatif dan visual, khususnya
-                    desain grafis, fotografi, dan videografi.
+                <p>
+                    Halo! Saya Akbar Nubijak, siswa SMK PGRI 1 Tangerang
+                    jurusan Desain Komunikasi Visual.
                 </p>
 
-                <div class="info">
-
-                    <div class="info-box">
-                        <small>SEKOLAH</small>
-                        <strong>SMK PGRI 1 Tangerang</strong>
-                    </div>
-
-                    <div class="info-box">
-                        <small>JURUSAN</small>
-                        <strong>Desain Komunikasi Visual</strong>
-                    </div>
-
-                    <div class="info-box">
-                        <small>FOKUS</small>
-                        <strong>Graphic Design</strong>
-                    </div>
-
-                    <div class="info-box">
-                        <small>MINAT</small>
-                        <strong>Visual & Creative</strong>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- SKILLS -->
-    <section class="skills-section">
-
-        <div class="skills-container">
-
-            <div class="small-title">What I Do</div>
-
-            <h2 class="skills-title">
-                Skills & Interests
-            </h2>
-
-            <div class="skills">
-
-                <div class="skill">Graphic Design</div>
-                <div class="skill">Photography</div>
-                <div class="skill">Videography</div>
-                <div class="skill">Video Editing</div>
-                <div class="skill">Content Creation</div>
-                <div class="skill">Social Media Design</div>
-                <div class="skill">Visual Branding</div>
+                <p>
+                    Saya tertarik dengan dunia kreatif, terutama desain
+                    grafis, fotografi, dan videografi.
+                </p>
 
             </div>
 
         </div>
 
-    </section>
 
+        <!-- DATA DIRI -->
+        <div class="info">
 
-    <!-- EXPERIENCE -->
-    <section class="experience">
+            <div class="box">
+                <small>SEKOLAH</small>
+                <p>SMK PGRI 1 Tangerang</p>
+            </div>
 
-        <div class="experience-container">
+            <div class="box">
+                <small>JURUSAN</small>
+                <p>Desain Komunikasi Visual</p>
+            </div>
 
-            <div class="small-title">Experience</div>
+            <div class="box">
+                <small>SKILL</small>
+                <p>Desain Grafis</p>
+            </div>
 
-            <h2 class="experience-title">
-                DKV Production
-            </h2>
-
-            <div class="experience-card">
-
-                <div>
-                    <h3>Divisi Desain Grafis</h3>
-
-                    <p>
-                        Terlibat dalam DKV Production sebagai bagian dari
-                        divisi desain grafis. Berfokus pada pembuatan berbagai
-                        kebutuhan visual seperti poster, konten media sosial,
-                        desain merchandise, branding, dan kebutuhan desain
-                        lainnya.
-                    </p>
-                </div>
-
-                <div class="year">
-                    2025 — Sekarang
-                </div>
-
+            <div class="box">
+                <small>MINAT</small>
+                <p>Fotografi & Videografi</p>
             </div>
 
         </div>
 
-    </section>
-
-
-    <!-- FOOTER -->
-    <footer>
-        © 2026 Akbar Nubijak — DKV Portfolio
-    </footer>
+    </div>
 
 </body>
 </html>
