@@ -3,37 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berita 2</title>
+
+    <title>Juara 2 Lomba Short Movie</title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background: #0f1115;
             color: white;
-            padding: 50px;
+            line-height: 1.7;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
+            padding: 60px 25px;
+        }
+
+        .label {
+            color: #7c83ff;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
         }
 
         h1 {
-            font-size: 40px;
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .tanggal {
+            color: #888;
+            margin-bottom: 35px;
+        }
+
+        .content {
+            background: #171a21;
+            padding: 35px;
+            border-radius: 18px;
+        }
+
+        .content p {
+            color: #d0d0d0;
+            font-size: 17px;
             margin-bottom: 20px;
         }
 
-        p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #ccc;
+        .highlight {
+            color: white;
+            font-weight: bold;
         }
 
-        a {
+        /* Dokumentasi */
+        .dokumentasi {
+            margin-top: 45px;
+        }
+
+        .dokumentasi h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .dokumentasi p {
+            color: #999;
+            margin-bottom: 20px;
+        }
+
+        .foto {
+            width: 100%;
+            height: 500px;
+            border-radius: 18px;
+            overflow: hidden;
+            background: #22262f;
+        }
+
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .back {
             display: inline-block;
-            margin-top: 30px;
+            margin-top: 40px;
+            padding: 12px 22px;
+            border-radius: 10px;
+            background: #7c83ff;
             color: white;
             text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .back:hover {
+            background: #6269e8;
+        }
+
+        @media (max-width: 700px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            .foto {
+                height: 300px;
+            }
         }
     </style>
 </head>
@@ -42,21 +126,67 @@
 
     <div class="container">
 
-        <h1>Judul Berita Selanjutnya</h1>
+        <div class="label">PRESTASI</div>
 
-        <p>
-            Ini adalah teks yang akan muncul di halaman selanjutnya.
-            Kamu bisa mengganti bagian ini dengan isi berita atau informasi
-            yang ingin ditampilkan.
-        </p>
+        <h1>
+            JUARA 2 LOMBA SHORT MOVIE
+            TINGKAT PROVINSI BANTEN
+        </h1>
 
-        <p>
-            Tambahkan paragraf lainnya di sini jika diperlukan.
-            Misalnya informasi tentang sekolah, kegiatan, prestasi,
-            atau cerita lainnya.
-        </p>
+        <div class="tanggal">
+            Prestasi • 2026
+        </div>
 
-        <a href="../index.html">← Kembali ke Beranda</a>
+        <div class="content">
+
+            <p>
+                Meraih <span class="highlight">
+                Juara 2 Lomba Short Movie Tingkat Provinsi Banten
+                </span> menjadi salah satu pencapaian yang membanggakan
+                dalam perjalanan berkarya di bidang kreatif.
+            </p>
+
+            <p>
+                Dalam perlombaan ini, kami mengembangkan sebuah film pendek
+                dengan menggabungkan ide cerita, penyusunan konsep,
+                pengambilan gambar, hingga proses editing.
+            </p>
+
+            <p>
+                Proses produksi dilakukan secara bersama-sama dengan
+                pembagian tugas dalam tim. Setiap anggota berkontribusi
+                dalam menciptakan karya hingga akhirnya berhasil meraih
+                Juara 2 tingkat Provinsi Banten.
+            </p>
+
+            <p>
+                Pengalaman ini menjadi kesempatan untuk mengembangkan
+                kemampuan dalam bidang videografi, storytelling, editing,
+                dan produksi film.
+            </p>
+
+        </div>
+
+        <!-- DOKUMENTASI -->
+
+        <div class="dokumentasi">
+
+            <h2>Dokumentasi</h2>
+
+            <p>
+                Dokumentasi kegiatan lomba short movie.
+            </p>
+
+            <div class="foto">
+                <img src="foto-shortmovie.jpg"
+                     alt="Dokumentasi Lomba Short Movie">
+            </div>
+
+        </div>
+
+        <a href="../index.html" class="back">
+            ← Kembali ke Beranda
+        </a>
 
     </div>
 
