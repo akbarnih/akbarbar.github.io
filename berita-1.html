@@ -1,81 +1,95 @@
 ```html
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juara 2 Lomba Short Movie</title>
+
+    <title>Juara 2 Short Movie - Akbar Nubijak</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
         body {
-            background: #ffffff;
-            color: #222;
-            line-height: 1.7;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
         }
 
         .container {
-            width: 90%;
-            max-width: 900px;
-            margin: 50px auto;
+            width: 800px;
+            max-width: 90%;
+            margin: 40px auto;
+            background-color: white;
         }
 
-        .back {
-            display: inline-block;
-            margin-bottom: 25px;
-            color: #555;
+        /* HEADER */
+        header {
+            background-color: teal;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 35px;
+        }
+
+        header p {
+            margin-bottom: 0;
+        }
+
+        /* NAVBAR */
+        nav {
+            text-align: center;
+            padding: 18px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            color: black;
             text-decoration: none;
-            font-size: 15px;
+            margin: 0 10px;
         }
 
-        .back:hover {
-            color: #000;
+        nav a:hover {
+            color: teal;
+        }
+
+        /* ISI */
+        main {
+            padding: 30px;
         }
 
         .label {
             display: inline-block;
-            background: #111;
+            background-color: teal;
             color: white;
             padding: 7px 14px;
-            border-radius: 20px;
             font-size: 13px;
+            border-radius: 3px;
             margin-bottom: 15px;
         }
 
-        h1 {
-            font-size: 38px;
-            line-height: 1.2;
-            margin-bottom: 15px;
+        main h2 {
+            color: teal;
+            font-size: 28px;
+            line-height: 1.3;
+            margin-top: 0;
         }
 
-        .date {
-            color: #777;
-            font-size: 14px;
-            margin-bottom: 30px;
-        }
-
-        .content {
-            font-size: 16px;
+        main p {
+            line-height: 1.7;
             color: #444;
-            margin-bottom: 40px;
         }
 
-        .content p {
-            margin-bottom: 18px;
-        }
-
-        /* KOLOM DOKUMENTASI */
+        /* DOKUMENTASI */
         .dokumentasi {
             margin-top: 35px;
         }
 
-        .dokumentasi h2 {
+        .dokumentasi h3 {
+            color: teal;
             font-size: 22px;
             margin-bottom: 15px;
         }
@@ -83,10 +97,9 @@
         .foto-box {
             width: 100%;
             height: 420px;
+            background-color: #f2f2f2;
             border: 1px solid #ddd;
-            border-radius: 15px;
             overflow: hidden;
-            background: #f5f5f5;
         }
 
         .foto-box img {
@@ -97,24 +110,58 @@
         }
 
         .caption {
+            text-align: center;
             font-size: 13px;
             color: #777;
             margin-top: 10px;
-            text-align: center;
         }
 
-        .footer {
-            margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
+        /* TOMBOL KEMBALI */
+        .kembali {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 18px;
+            background-color: teal;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+
+        .kembali:hover {
+            background-color: #006666;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #222;
+            color: white;
             text-align: center;
-            color: #888;
+            padding: 15px;
             font-size: 13px;
         }
 
-        @media (max-width: 600px) {
-            h1 {
+        /* HP */
+        @media screen and (max-width: 600px) {
+
+            .container {
+                width: 95%;
+            }
+
+            header h1 {
                 font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            main h2 {
+                font-size: 24px;
             }
 
             .foto-box {
@@ -128,72 +175,90 @@
 
     <div class="container">
 
-        <!-- Tombol kembali -->
-        <a href="berita1.html" class="back">← Kembali ke Berita 1</a>
+        <!-- HEADER -->
+        <header>
+            <h1>Akbar Nubijak</h1>
+            <p>Desain Komunikasi Visual</p>
+        </header>
 
-        <!-- Judul -->
-        <span class="label">PRESTASI</span>
 
-        <h1>
-            JUARA 2 LOMBA SHORT MOVIE
-            TINGKAT PROVINSI BANTEN
-        </h1>
+        <!-- NAVBAR -->
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang Saya</a>
+            <a href="sekolahku.html">Sekolahku</a>
+            <a href="syair-lagu.html">Syair Lagu</a>
+        </nav>
 
-        <div class="date">
-            Prestasi • 2026
-        </div>
 
-        <!-- Isi berita -->
-        <div class="content">
+        <!-- ISI BERITA -->
+        <main>
+
+            <span class="label">PRESTASI</span>
+
+            <h2>
+                JUARA 2 LOMBA SHORT MOVIE
+                TINGKAT PROVINSI BANTEN
+            </h2>
 
             <p>
-                Prestasi membanggakan kembali diraih dalam bidang perfilman
-                melalui Lomba Short Movie tingkat Provinsi Banten.
-                Dalam kompetisi tersebut, tim berhasil meraih
-                <strong>Juara 2</strong> melalui karya short movie yang
-                mengangkat cerita dan pesan kreatif.
+                Salah satu pencapaian yang saya raih adalah
+                <strong>Juara 2 Lomba Short Movie Tingkat Provinsi Banten.</strong>
+                Prestasi ini diperoleh melalui sebuah karya video
+                pendek yang dibuat bersama tim.
             </p>
 
             <p>
-                Pencapaian ini menjadi hasil dari kerja sama seluruh anggota
-                tim mulai dari proses pencarian ide, penyusunan konsep,
-                pembuatan naskah, proses pengambilan gambar hingga tahap
-                editing dan penyelesaian video.
+                Dalam proses pembuatannya, kami bekerja sama mulai dari
+                menentukan ide, membuat konsep cerita, melakukan
+                pengambilan gambar, hingga proses editing dan penyelesaian
+                video.
             </p>
 
             <p>
-                Keberhasilan meraih Juara 2 menjadi pengalaman berharga
-                sekaligus motivasi untuk terus mengembangkan kemampuan
-                dalam bidang desain, videografi, storytelling, dan
-                produksi film.
+                Pengalaman mengikuti lomba ini memberikan kesempatan
+                untuk mengembangkan kemampuan dalam bidang videografi,
+                editing, storytelling, serta kerja sama tim.
             </p>
 
-        </div>
 
-        <!-- Dokumentasi -->
-        <div class="dokumentasi">
+            <!-- DOKUMENTASI -->
+            <div class="dokumentasi">
 
-            <h2>Dokumentasi</h2>
+                <h3>Dokumentasi</h3>
 
-            <div class="foto-box">
-                <!-- GANTI FOTO DI SINI -->
-                <img src="foto-shortmovie.jpg"
-                     alt="Dokumentasi Juara 2 Lomba Short Movie">
+                <div class="foto-box">
+
+                    <!-- GANTI NAMA FOTO DI SINI -->
+                    <img src="foto-shortmovie.jpg"
+                         alt="Dokumentasi Juara 2 Lomba Short Movie">
+
+                </div>
+
+                <p class="caption">
+                    Dokumentasi Juara 2 Lomba Short Movie
+                    Tingkat Provinsi Banten
+                </p>
+
             </div>
 
-            <p class="caption">
-                Dokumentasi Juara 2 Lomba Short Movie Tingkat Provinsi Banten
-            </p>
 
-        </div>
+            <!-- TOMBOL KEMBALI -->
+            <a href="berita1.html" class="kembali">
+                ← Kembali ke Berita 1
+            </a>
 
-        <!-- Footer -->
-        <div class="footer">
-            © 2026 Akbar Nubijak • Portofolio
-        </div>
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer>
+            &copy; 2026 Akbar Nubijak
+        </footer>
 
     </div>
 
 </body>
+
 </html>
 ```
