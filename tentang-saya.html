@@ -1,197 +1,73 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Tentang Saya — Akbar Nubijak</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: white;
-            color: #111;
-        }
-
-        /* NAVBAR */
-        nav {
-            padding: 20px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #eee;
-        }
-
-        .logo {
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #555;
-            margin-left: 20px;
-            font-size: 14px;
-        }
-
-        nav a:hover {
-            color: black;
-        }
-
-        /* CONTENT */
-        .container {
-            max-width: 900px;
-            margin: 80px auto;
-            padding: 0 25px;
-        }
-
-        .about {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-        }
-
-        .about img {
-            width: 220px;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 20px;
-        }
-
-        .text h1 {
-            font-size: 45px;
-            margin-bottom: 15px;
-        }
-
-        .text h1 span {
-            color: #777;
-        }
-
-        .text p {
-            color: #555;
-            line-height: 1.7;
-            margin-bottom: 15px;
-        }
-
-        /* INFO */
-        .info {
-            margin-top: 50px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-        }
-
-        .box {
-            padding: 20px;
-            background: #f6f6f6;
-            border-radius: 12px;
-        }
-
-        .box small {
-            color: #888;
-        }
-
-        .box p {
-            margin-top: 5px;
-            color: #111;
-            font-weight: bold;
-        }
-
-        /* MOBILE */
-        @media (max-width: 650px) {
-
-            .about {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .about img {
-                width: 180px;
-                height: 180px;
-            }
-
-            .text h1 {
-                font-size: 36px;
-            }
-
-            .info {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <title>Beranda</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
-<body>
+<body bgcolor="darkgrey" background="images/background.svg">
+    <!-- Halaman web tanpa CSS. Murni hanya memakai HTML -->
+    <p>&nbsp;</p>
+    <table border="1" width="800px" cellpadding="12px" align="center" bgcolor="white">
+        <tr>
+            <td colspan="2" align="center" bgcolor="teal" background="images/jaring-teal.svg">
+                <font color="white">
+                    <p>&nbsp;</p>
+                    <h1>Website Mawan</h1>
+                    <p><em>Di mana ada ke Mawan, di situ ada jalan.</em></p>
+                    <p>&nbsp;</p>
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="pink">
+                <a href="./">Beranda</a> |
+                <a href="tentang-saya.html">Tentang Saya</a> |
+                <a href="sekolahku.html">Sekolahku</a> |
+                <a href="syair-lagu.html">Syair Lagu</a>
+            </td>
+        </tr>
+        <tr>
+            <td width="75%">
+                <!-- Content utama -->
 
-    <!-- NAVBAR -->
-    <nav>
-        <div class="logo">AKBAR.</div>
+                <h3>Pembelajaran Jarak Jauh</h3>
+                <p align="right"><small><em>Senin, 7 September 2026</em></small></p>
+                <p>Karena adanya abu erupsi anak gunung Krakatau, maka selama
+                3 hari ke depan, pembelajaran dilakukan secara jarak jauh.
+                Pembelajaran dapat memakai zoom, LMS, WhatsApp, Telegram,
+                atau media lain yang ditentukan oleh guru.</p>
+                <p><a href="berita/berita-1.html">Selanjutnya</a></p>
 
-        <div>
-            <a href="index.html">Beranda</a>
-            <a href="tentang.html">Tentang Saya</a>
-        </div>
-    </nav>
+                <hr>
 
+                <h3>Lomba Pembuatan Video</h3>
+                <p align="right"><small><em>Jumat, 4 September 2026</em></small></p>
+                <p>Telah dibuka pendaftaran lomba pembuatan video pendek
+                tentang pariwisata di Tangerang. Lomba ini bekerja sama dengan
+                MGMP DKV Kota Tangerang, yang bertujuan untuk memperkenalkan
+                pariwisata yang ada di kota Tangerang.</p>
+                <p><a href="berita/berita-2.html">Selanjutnya</a></p>
 
-    <!-- TENTANG SAYA -->
-    <div class="container">
-
-        <div class="about">
-
-            <img src="diri.png" alt="Foto Akbar">
-
-            <div class="text">
-
-                <h1>Akbar <span>Nubijak.</span></h1>
-
-                <p>
-                    Halo! Saya Akbar Nubijak, siswa SMK PGRI 1 Tangerang
-                    jurusan Desain Komunikasi Visual.
-                </p>
-
-                <p>
-                    Saya tertarik dengan dunia kreatif, terutama desain
-                    grafis, fotografi, dan videografi.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- DATA DIRI -->
-        <div class="info">
-
-            <div class="box">
-                <small>SEKOLAH</small>
-                <p>SMK PGRI 1 Tangerang</p>
-            </div>
-
-            <div class="box">
-                <small>JURUSAN</small>
-                <p>Desain Komunikasi Visual</p>
-            </div>
-
-            <div class="box">
-                <small>SKILL</small>
-                <p>Desain Grafis</p>
-            </div>
-
-            <div class="box">
-                <small>MINAT</small>
-                <p>Fotografi & Desain Grafis</p>
-            </div>
-
-        </div>
-
-    </div>
-
+                <!-- Akhir dari content utama -->
+            </td>
+            <td width="25%" valign="top" bgcolor="lightgrey">
+                <p>Tautan eksternal</p>
+                <ol>
+                    <li><a href="https://www.mawan.or.id">Website Mawan</a></li>
+                    <li><a href="https://www.github.com">Github</a></li>
+                    <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
+                    <li><a href="https://www.w3schools.com">W3Schools</a></li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right" bgcolor="black">
+                <font color="white"><small>&copy; Copyright Mawan A. Nugroho, 2026.</small></font>
+            </td>
+        </tr>
+    </table>
+    <p>&nbsp;</p>
 </body>
+
 </html>
